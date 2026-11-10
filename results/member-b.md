@@ -153,7 +153,7 @@ All other fields will use the agreed valid baseline.
 
 1. Restore the form.
 2. Enter the valid baseline.
-3. Change only age to 10.
+3. Change only age to 18.
 4. Write the expected result.
 5. Submit.
 6. Observe acceptance or rejection.
@@ -179,45 +179,56 @@ Message is displayed: "Your Input passed validation".
 
 ## 3-Point Boundary Tests
 
-### Test ID: YOUR-TEST-ID
+### Test ID: AGE-3P-19-B
 
 | Item | Details |
 |---|---|
-| Test type | Positive / Negative / Recovery |
-| Tester | Your member identifier |
-| Website | Website name |
-| Status | Not run |
+| Test type | Positive |
+| Tester | member-b |
+| Website | https://testpages.eviltester.com/apps/client-server-form-validation/ |
+| Status | Pass |
 
 #### Purpose
 
-What does this test check?
+This test checks if the age above the boundary value is accepted or rejected.
 
 #### Preconditions
 
-What must be true before the test starts?
+The validation form is open.
+All other fields will use the agreed valid baseline.
 
 #### Test Data
 
 | Field | Value |
 |---|---|
-| Input name | Input value |
+| First name | Alexander |
+| Last name | TestingStudent |
+| Age | 19 |
+| Country | Singapore |
+| Notes | Manual testing classroom exercise |
 
 #### Steps
 
-1.
-2.
-3.
+1. Restore the form.
+2. Enter the valid baseline.
+3. Change only age to 19.
+4. Write the expected result.
+5. Submit.
+6. Observe acceptance or rejection.
+7. Where displayed, verify the submitted age.
+8. Record the actual result and status in a separate test-case block.
 
 #### Expected Result
 
-Write this before executing the test.
+Submission should be successful, with no validation error found.
 
 #### Actual Result
 
-Not recorded — test has not been executed.
+Submission is successful.
+Message is displayed: "Your Input passed validation".
 
 #### Evidence
 
-Not captured.
+[View screenshot](../evidence/member-b/AGE-3P-19-B.png)
 
 ---
