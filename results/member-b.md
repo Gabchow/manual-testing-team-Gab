@@ -132,7 +132,7 @@ Error message pops up under age box: "Value must be greater than or equal to 18.
 
 #### Purpose
 
-Check that an age at the boundary (exact minimum) is rejected.
+Check that an age at the boundary (exact minimum) is accepted.
 
 #### Preconditions
 
@@ -143,27 +143,39 @@ All other fields will use the agreed valid baseline.
 
 | Field | Value |
 |---|---|
-| Input name | Input value |
+| First name | Alexander |
+| Last name | TestingStudent |
+| Age | 18 |
+| Country | Singapore |
+| Notes | Manual testing classroom exercise |
 
 #### Steps
 
-1.
-2.
-3.
+1. Restore the form.
+2. Enter the valid baseline.
+3. Change only age to 10.
+4. Write the expected result.
+5. Submit.
+6. Observe acceptance or rejection.
+7. Where displayed, verify the submitted age.
+8. Record the actual result and status in a separate test-case block.
 
 #### Expected Result
 
-Write this before executing the test.
+Submission should be successful, with no validation error found.
 
 #### Actual Result
 
-Not recorded — test has not been executed.
+Submission is successful.
+Message is displayed: "Your Input passed validation".
 
 #### Evidence
-
-Not captured.
+[View screenshot](../evidence/member-b/AGE-2P-18-B.png)
 
 ---
+
+
+
 
 ## 3-Point Boundary Tests
 
