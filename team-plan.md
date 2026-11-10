@@ -5,8 +5,8 @@
 ## Members
 
 ### Member A
-- GitHub username:Gabchow
-- Coordination responsibility: Team coordination
+- GitHub username:
+- Coordination responsibility:
 
 ### Member B
 - GitHub username:
@@ -30,4 +30,4 @@
 
 ## Open-Ended Testing Allocation
 
-## Repository Integration Arrangements  
+## Repository Integration Arrangements
