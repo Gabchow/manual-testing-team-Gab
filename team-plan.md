@@ -13,8 +13,8 @@
 - Coordination responsibility:
 
 ### Member C
-- GitHub username:
-- Coordination responsibility:
+- GitHub username:ChongBoon  
+- Coordination responsibility: Guided Test Coverage
 
 ### Member D
 - GitHub username:
