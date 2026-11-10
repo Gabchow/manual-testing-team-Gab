@@ -77,8 +77,8 @@ This test checks the displayed output when an input age is not within the valida
 
 #### Preconditions
 
-All other form fields should be empty.
-Form must be restored.
+The validation form is open.
+All other fields will use the agreed valid baseline.
 
 #### Test Data
 

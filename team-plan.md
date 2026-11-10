@@ -30,4 +30,9 @@
 
 ## Open-Ended Testing Allocation
 
+### Member B — Open-Ended Testing
+
+- Chosen area: Input form age
+- Question to investigate: What will happen when a decimal value is input for the age?
+
 ## Repository Integration Arrangements  
