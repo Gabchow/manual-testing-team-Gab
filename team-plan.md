@@ -30,4 +30,29 @@
 
 ## Open-Ended Testing Allocation
 
+### Member A — Open-Ended Testing
+
+- Chosen area:
+- Question to investigate:
+
+### Member B — Open-Ended Testing
+
+- Chosen area:
+- Question to investigate:
+
+### Member C — Open-Ended Testing
+
+- Chosen area: Surname length testing
+- Question to investigate: What invalid inputs have we not considered?
+
+### Member D — Open-Ended Testing
+
+- Chosen area:
+- Question to investigate:
+
+### Member E — Open-Ended Testing
+
+- Chosen area:
+- Question to investigate:
+
 ## Repository Integration Arrangements  

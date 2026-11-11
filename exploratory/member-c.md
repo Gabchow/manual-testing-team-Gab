@@ -26,7 +26,7 @@ Choose number at the baseline and testing the numbers before or after.
 |---|---|
 | Test type | Negative |
 | Tester | member-a |
-| Status | Not run |
+| Status | Pass |
 
 #### Purpose
 
