@@ -134,10 +134,10 @@ All other fields will use the agreed valid baseline.
 
 #### Steps
 
-1. Restore the validation form.
-2. Replace age with `80`.
-3. Submit.
-4. Observe the response.
+1.Restore the validation form.
+2.Replace age with `80`.
+3.Submit.
+4.Observe the response.
 
 #### Expected Result
 
@@ -155,4 +155,47 @@ Successfully submitted.
 
 ## 3-Point Boundary Tests
 
+### Test ID: AGE-3P-79-C
 
+| Item | Details |
+|---|---|
+| Test type | Positive |
+| Tester | member-c |
+| Website | Test Pages validation form |
+| Status | Not run |
+
+#### Purpose
+
+Check if able to submit
+
+#### Preconditions
+
+Able to submit if age ranges from 18-80
+
+#### Test Data
+
+| Field | Value |
+|---|---|
+| Age | `80` |
+| Other fields | Agreed valid baseline |
+
+#### Steps
+
+1.Restore the validation form.
+2.Replace age with `80`.
+3.Submit.
+4.Observe the response.
+
+#### Expected Result
+
+Should be able to submit the form
+
+#### Actual Result
+
+Successfully submitted
+
+#### Evidence
+
+[View screenshot](../evidence/member-c/AGE-3P-79-C.png)
+
+---
