@@ -9,6 +9,8 @@
 | Browser and version | Google Chrome (version to be filled) |
 | Operating system | Windows |
 
+---
+
 ## Login Tests
 
 ### Test ID: LOGIN-R01
@@ -75,7 +77,7 @@ Pass — The application correctly handled login recovery after an invalid passw
 | Test type | Input-format observation |
 | Tester | member-e |
 | Website | Test Pages Validation Form |
-| Status | Not run |
+| Status | Pass |
 
 #### Purpose
 
@@ -91,13 +93,13 @@ The validation form is open and all other fields use the agreed valid baseline.
 |---|---|
 | First name | Alex |
 | Surname | TestingStudent |
-| Age | abc |
-| Country | Team-agreed valid selection |
+| Age | abc (attempted input) |
+| Country | Afghanistan (selected in observed form) |
 | Notes | Manual testing classroom exercise |
 
 #### Steps
 
-1. Open the validation form.
+1. Open the Test Pages validation form.
 2. Enter the agreed valid baseline.
 3. Attempt to enter `abc` into the Age field.
 4. Observe whether the input is accepted, blocked, or cleared.
@@ -106,15 +108,19 @@ The validation form is open and all other fields use the agreed valid baseline.
 
 #### Expected Result
 
-The classroom age model requires a whole number from 18 to 80. Non-numeric input should not result in a successful submission with `abc` as the age. The exact input-handling behaviour is to be observed.
+The classroom age model requires a whole number between 18 and 80 inclusive. Non-numeric input should not result in a successful submission with `abc` as the age. The exact input-handling behaviour is to be observed.
 
 #### Actual Result
 
-Not recorded — test has not been executed.
+The Age field did not allow alphabetic characters to be entered. When attempting to type `abc`, the field remained empty. The browser prevented the non-numeric input at the input field level. Server-side rejection was not tested.
 
 #### Evidence
 
-Not captured.
+[Non-numeric Age Input Screenshot](../evidence/member-e/age-ep-abc.png)
+
+#### Conclusion
+
+Pass — The browser prevented non-numeric input in the Age field, consistent with the classroom whole-number requirement.
 
 ---
 
