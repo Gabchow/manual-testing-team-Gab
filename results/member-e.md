@@ -1,3 +1,4 @@
+
 # Manual Testing Results — Member E
 
 ## Environment
@@ -244,7 +245,7 @@ Pass — The browser correctly prevented submission of Age 81 because it exceeds
 | Tester | member-e |
 | Website | Test Pages Validation Form |
 | Technique | 3-point boundary testing |
-| Status | Not run |
+| Status | Pass |
 
 #### Purpose
 
@@ -278,11 +279,15 @@ Age 16 should be rejected because it is below the minimum valid age of 18.
 
 #### Actual Result
 
-Not recorded — test has not been executed.
+After entering Age 16 and clicking Submit, the browser displayed the validation message "Value must be greater than or equal to 18." The form remained on the input page, and submission was prevented by client-side validation.
 
 #### Evidence
 
-Not captured.
+[Age 16 Validation Screenshot](../evidence/member-e/age-3p-16.png)
+
+#### Conclusion
+
+Pass — The browser correctly prevented submission of Age 16 because it is below the minimum valid age of 18.
 
 ---
 
