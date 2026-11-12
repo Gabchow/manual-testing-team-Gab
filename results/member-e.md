@@ -134,7 +134,7 @@ Pass — The browser prevented non-numeric input in the Age field, consistent wi
 | Tester | member-e |
 | Website | Test Pages Validation Form |
 | Technique | 2-point boundary testing |
-| Status | Not run |
+| Status | Pass |
 
 #### Purpose
 
@@ -142,19 +142,22 @@ To verify that age 18, the minimum valid age, is accepted.
 
 #### Preconditions
 
-The validation form is open and all other fields use the agreed valid baseline.
+The validation form is open and all other fields use the valid baseline.
 
 #### Test Data
 
 | Field | Value |
 |---|---|
+| First name | Alexander |
+| Surname | TestingStudent |
 | Age | 18 |
-| Other fields | Agreed valid baseline |
+| Country | Singapore |
+| Notes | Manual testing classroom exercise |
 
 #### Steps
 
 1. Restore the validation form.
-2. Enter the agreed valid baseline.
+2. Enter the valid baseline.
 3. Change Age to `18`.
 4. Submit the form.
 5. Observe the response.
@@ -165,11 +168,15 @@ Age 18 should be accepted because it is the minimum valid age.
 
 #### Actual Result
 
-Not recorded — test has not been executed.
+The initial submission using the first name `Alex` produced a validation error stating "Firstname too short". After changing the first name to `Alexander` and keeping Age as `18`, the form displayed "Valid Input — Your Input passed validation". The submitted age of 18 was shown correctly.
 
 #### Evidence
 
-Not captured.
+[Age 18 Successful Validation Screenshot](../evidence/member-e/age-2p-18.png)
+
+#### Conclusion
+
+Pass — Age 18 was accepted as the minimum valid age after correcting the baseline first name.
 
 ---
 
@@ -189,19 +196,22 @@ To verify that age 81, immediately above the maximum valid age, is rejected.
 
 #### Preconditions
 
-The validation form is open and all other fields use the agreed valid baseline.
+The validation form is open and all other fields use the valid baseline.
 
 #### Test Data
 
 | Field | Value |
 |---|---|
+| First name | Alexander |
+| Surname | TestingStudent |
 | Age | 81 |
-| Other fields | Agreed valid baseline |
+| Country | Singapore |
+| Notes | Manual testing classroom exercise |
 
 #### Steps
 
 1. Restore the validation form.
-2. Enter the agreed valid baseline.
+2. Enter the valid baseline.
 3. Change Age to `81`.
 4. Submit the form.
 5. Observe the response.
@@ -238,19 +248,22 @@ To verify that age 16, below the minimum valid age, is rejected.
 
 #### Preconditions
 
-The validation form is open and all other fields use the agreed valid baseline.
+The validation form is open and all other fields use the valid baseline.
 
 #### Test Data
 
 | Field | Value |
 |---|---|
+| First name | Alexander |
+| Surname | TestingStudent |
 | Age | 16 |
-| Other fields | Agreed valid baseline |
+| Country | Singapore |
+| Notes | Manual testing classroom exercise |
 
 #### Steps
 
 1. Restore the validation form.
-2. Enter the agreed valid baseline.
+2. Enter the valid baseline.
 3. Change Age to `16`.
 4. Submit the form.
 5. Observe the response.
@@ -285,19 +298,22 @@ To verify that age 79, immediately below the maximum valid age, is accepted.
 
 #### Preconditions
 
-The validation form is open and all other fields use the agreed valid baseline.
+The validation form is open and all other fields use the valid baseline.
 
 #### Test Data
 
 | Field | Value |
 |---|---|
+| First name | Alexander |
+| Surname | TestingStudent |
 | Age | 79 |
-| Other fields | Agreed valid baseline |
+| Country | Singapore |
+| Notes | Manual testing classroom exercise |
 
 #### Steps
 
 1. Restore the validation form.
-2. Enter the agreed valid baseline.
+2. Enter the valid baseline.
 3. Change Age to `79`.
 4. Submit the form.
 5. Observe the response.
