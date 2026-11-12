@@ -1,4 +1,3 @@
-
 # Manual Testing Results — Member E
 
 ## Environment
@@ -299,7 +298,7 @@ Pass — The browser correctly prevented submission of Age 16 because it is belo
 | Tester | member-e |
 | Website | Test Pages Validation Form |
 | Technique | 3-point boundary testing |
-| Status | Not run |
+| Status | Pass |
 
 #### Purpose
 
@@ -333,8 +332,35 @@ Age 79 should be accepted because it is within the valid age range of 18 to 80.
 
 #### Actual Result
 
-Not recorded — test has not been executed.
+After entering Age 79 and clicking Submit, the form displayed "Valid Input — Your Input passed validation". The Validation Report showed the submitted age as 79, confirming that the value was accepted successfully.
 
 #### Evidence
 
-Not captured.
+[Age 79 Successful Validation Screenshot](../evidence/member-e/age-3p-79.png)
+
+#### Conclusion
+
+Pass — The application correctly accepted Age 79 because it is within the valid age range of 18 to 80.
+
+---
+
+## Guided Testing Summary
+
+| Test ID | Test Scenario | Result |
+|---|---|---|
+| LOGIN-R01 | Login recovery after invalid password | Pass |
+| AGE-EP-ABC-E | Non-numeric age input abc | Pass |
+| AGE-2P-18-E | Minimum valid age 18 | Pass |
+| AGE-2P-81-E | Above maximum age 81 | Pass |
+| AGE-3P-16-E | Below minimum age 16 | Pass |
+| AGE-3P-79-E | Valid age 79 | Pass |
+
+### Overall Result
+
+All six guided tests were executed and passed according to their expected outcomes.
+
+The login recovery test confirmed that a user could successfully log in after correcting an invalid password.
+
+The age validation tests confirmed that the browser blocked non-numeric input and enforced the expected minimum and maximum age boundaries.
+
+An additional observation was recorded during Age 18 testing: the first name `Alex` produced a validation error. Changing it to `Alexander` resolved the issue and allowed the test to proceed successfully.
