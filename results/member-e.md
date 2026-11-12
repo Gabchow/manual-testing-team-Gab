@@ -85,7 +85,7 @@ To observe how the Age field handles non-numeric input.
 
 #### Preconditions
 
-The validation form is open and all other fields use the agreed valid baseline.
+The validation form is open and the input fields are available.
 
 #### Test Data
 
@@ -100,7 +100,7 @@ The validation form is open and all other fields use the agreed valid baseline.
 #### Steps
 
 1. Open the Test Pages validation form.
-2. Enter the agreed valid baseline.
+2. Enter the baseline information.
 3. Attempt to enter `abc` into the Age field.
 4. Observe whether the input is accepted, blocked, or cleared.
 5. If the input can be entered, submit the form.
@@ -142,7 +142,7 @@ To verify that age 18, the minimum valid age, is accepted.
 
 #### Preconditions
 
-The validation form is open and all other fields use the valid baseline.
+The validation form is open and all other fields use the corrected valid baseline.
 
 #### Test Data
 
@@ -188,7 +188,7 @@ Pass — Age 18 was accepted as the minimum valid age after correcting the basel
 | Tester | member-e |
 | Website | Test Pages Validation Form |
 | Technique | 2-point boundary testing |
-| Status | Not run |
+| Status | Pass |
 
 #### Purpose
 
@@ -196,7 +196,7 @@ To verify that age 81, immediately above the maximum valid age, is rejected.
 
 #### Preconditions
 
-The validation form is open and all other fields use the valid baseline.
+The validation form is open and all other fields use the corrected valid baseline.
 
 #### Test Data
 
@@ -222,11 +222,15 @@ Age 81 should be rejected because it exceeds the maximum valid age of 80.
 
 #### Actual Result
 
-Not recorded — test has not been executed.
+After entering Age 81 and clicking Submit, the browser displayed the validation message "Value must be less than or equal to 80." The form remained on the input page and submission was prevented by client-side validation.
 
 #### Evidence
 
-Not captured.
+[Age 81 Validation Screenshot](../evidence/member-e/age-2p-81.png)
+
+#### Conclusion
+
+Pass — The browser correctly prevented submission of Age 81 because it exceeds the maximum valid age of 80.
 
 ---
 
@@ -248,7 +252,7 @@ To verify that age 16, below the minimum valid age, is rejected.
 
 #### Preconditions
 
-The validation form is open and all other fields use the valid baseline.
+The validation form is open and all other fields use the corrected valid baseline.
 
 #### Test Data
 
@@ -298,7 +302,7 @@ To verify that age 79, immediately below the maximum valid age, is accepted.
 
 #### Preconditions
 
-The validation form is open and all other fields use the valid baseline.
+The validation form is open and all other fields use the corrected valid baseline.
 
 #### Test Data
 
