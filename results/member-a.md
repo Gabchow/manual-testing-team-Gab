@@ -118,7 +118,7 @@ The form was successfully submitted with the age 30.
 
 ## 2-Point Boundary Tests
 
-### Test ID: YOUR-TEST-ID
+### Test ID: AGE-2P-17-A
 
 | Item | Details |
 |---|---|
@@ -166,45 +166,49 @@ Age 17 is rejected, unable to submit the form, a message shown, rejecting the ag
 
 ## 3-Point Boundary Tests
 
-### Test ID: YOUR-TEST-ID
+### Test ID: AGE-3P-16-A
 
 | Item | Details |
 |---|---|
-| Test type | Positive / Negative / Recovery |
-| Tester | Your member identifier |
-| Website | Website name |
-| Status | Not run |
+| Test type | Negative |
+| Tester | member-a |
+| Website | https://testpages.eviltester.com/apps/client-server-form-validation/ |
+| Status | Rejected |
 
 #### Purpose
 
-What does this test check?
+Checks if the immediate neighbour of the 2-point boundary test still rejects an age
+that is below the minimum age requirements.
 
 #### Preconditions
 
-What must be true before the test starts?
+The page loads, all the other input fields are the agreed baseline values.
 
 #### Test Data
 
 | Field | Value |
 |---|---|
-| Input name | Input value |
+| Age | 16 |
+| All other input fields | Agreed baseline |
 
 #### Steps
 
-1.
-2.
-3.
+1. Restore the validation form.
+2. Enter the agreed baseline.
+3. Replace age with `16`.
+4. Submit.
+5. Observe the response.
 
 #### Expected Result
 
-Write this before executing the test.
+The form rejects the Age `16` because it is still below the minimum age requirements
 
 #### Actual Result
 
-Not recorded — test has not been executed.
+The form as expected rejects the input `16`. Giving a message shown, rejected the age input.
 
 #### Evidence
 
-Not captured.
+[View screenshot](../evidence/member-a/AGE-3P-16-A.png)
 
 ---
