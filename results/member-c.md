@@ -72,7 +72,8 @@ Whether can inuput age of 90
 
 #### Preconditions
 
-Returns a fail feedback of aged between 18 and 80
+The Login page is open.
+All other fields will use the agreed valid baseline.
 
 #### Test Data
 
@@ -114,7 +115,7 @@ Failed feedback popup saying "Value must be less than or equal to 80".
 | Tester | member-c |
 | Website | Test Pages validation form |
 | Technique | 2-point boundary testing |
-| Status | Not run |
+| Status | Pass |
 
 #### Purpose
 
@@ -162,7 +163,7 @@ Successfully submitted.
 | Test type | Positive |
 | Tester | member-c |
 | Website | Test Pages validation form |
-| Status | Not run |
+| Status | Pass |
 
 #### Purpose
 
@@ -170,7 +171,8 @@ Check if able to submit
 
 #### Preconditions
 
-Able to submit if age ranges from 18-80
+The validation form is open.
+All other fields will use the agreed valid baseline.
 
 #### Test Data
 
