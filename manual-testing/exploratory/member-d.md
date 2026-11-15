@@ -20,11 +20,11 @@ I will use the agreed valid baseline (first name `Alexander`, last name `Testing
 
 ### Test ID: OWN-D-01
 
-| Item      | Details     |
-| --------- | ----------- |
-| Test type | Exploratory |
-| Tester    | member-d    |
-| Status    | Not run     |
+| Item      | Details          |
+| --------- | ---------------- |
+| Test type | Exploratory      |
+| Tester    | member-d         |
+| Status    | Observation only |
 
 #### Purpose
 
@@ -55,21 +55,21 @@ The requirement does not define decimal behaviour. The question being investigat
 
 #### Actual Result
 
-Not recorded — test has not been executed.
+With the baseline entered and age set to `18.5`, the number was accepted into the age field, but a browser pop-up appeared beside it saying "Please enter a valid value. The two nearest valid values are 18 and 19." The form was not submitted. The message looks like the browser's built-in validation, so the decimal was stopped on the client side. Because nothing reached the server, I cannot say how the server treats 18.5. The requirement does not define decimal behaviour, so this is recorded as an observation.
 
 #### Evidence
 
-Not captured.
+Not captured. The result is described in the actual result above.
 
 ---
 
 ### Test ID: OWN-D-02
 
-| Item      | Details     |
-| --------- | ----------- |
-| Test type | Exploratory |
-| Tester    | member-d    |
-| Status    | Not run     |
+| Item      | Details          |
+| --------- | ---------------- |
+| Test type | Exploratory      |
+| Tester    | member-d         |
+| Status    | Observation only |
 
 #### Purpose
 
@@ -100,21 +100,21 @@ The requirement does not define decimal behaviour. The question being investigat
 
 #### Actual Result
 
-Not recorded — test has not been executed.
+With the baseline entered and age set to `30.5`, a browser pop-up appeared beside the age field saying "Please enter a valid value. The two nearest valid values are 30 and 31." The form was not submitted. This matches the response to 18.5 in OWN-D-01, even though 30.5 lies inside the 18 to 80 range, so the rejection appears to be about the value not being a whole number rather than about the range. Nothing reached the server, so server behaviour is unknown. The requirement does not define decimal behaviour, so this is recorded as an observation.
 
 #### Evidence
 
-Not captured.
+Not captured. The result is described in the actual result above.
 
 ---
 
 ### Test ID: OWN-D-03
 
-| Item      | Details     |
-| --------- | ----------- |
-| Test type | Exploratory |
-| Tester    | member-d    |
-| Status    | Not run     |
+| Item      | Details          |
+| --------- | ---------------- |
+| Test type | Exploratory      |
+| Tester    | member-d         |
+| Status    | Observation only |
 
 #### Purpose
 
@@ -145,18 +145,18 @@ The requirement does not define decimal behaviour. 80.5 is above the maximum of 
 
 #### Actual Result
 
-Not recorded — test has not been executed.
+With the baseline entered and age set to `80.5`, a browser pop-up appeared beside the age field saying "Value must be less than or equal to 80." The form was not submitted. The message is about the maximum, not about whole numbers, which differs from the messages for 18.5 and 30.5. This suggests the browser reported the range problem first when a value was both a decimal and out of range. Nothing reached the server, so server behaviour is unknown. The requirement does not define decimal behaviour, so this is recorded as an observation.
 
 #### Evidence
 
-Not captured.
+Not captured. The result is described in the actual result above.
 
 ---
 
 ## Overall Observations
 
-Not recorded yet.
+I tested three decimal ages: 18.5, 30.5 and 80.5. All three were stopped by the browser's built-in validation before anything was submitted. For 18.5 and 30.5 the pop-up said the nearest valid values were whole numbers, so the form appears to accept only whole-number ages, which matches the classroom model. 30.5 was blocked even though it is inside the valid range. For 80.5 the pop-up reported the maximum of 80 instead, so when a value is both a decimal and out of range, the range message appeared. The published requirement does not mention decimals, so I treated these as observations rather than defects.
 
 ## Next Question
 
-Not recorded yet.
+Would the server also reject decimal ages if the browser checks were bypassed, for example by sending the request directly, and is the server's response the same as the browser's? I would also like to confirm with the requirement owner whether decimal ages are meant to be allowed.
