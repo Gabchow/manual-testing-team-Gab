@@ -67,7 +67,7 @@ Brought to the intended inventory page. Able to see the products. Passed the tes
 | Test type | Positive |
 | Tester | member-a |
 | Website | https://testpages.eviltester.com/apps/client-server-form-validation/ |
-| Status | Not run |
+| Status | Accept |
 
 #### Purpose
 
@@ -122,42 +122,45 @@ The form was successfully submitted with the age 30.
 
 | Item | Details |
 |---|---|
-| Test type | Positive / Negative / Recovery |
-| Tester | Your member identifier |
-| Website | Website name |
-| Status | Not run |
+| Test type | Negative |
+| Tester | member-a |
+| Website | https://testpages.eviltester.com/apps/client-server-form-validation/ |
+| Status | Reject |
 
 #### Purpose
 
-What does this test check?
+Checking that the age limit immediately below the minimum is rejected.
 
 #### Preconditions
 
-What must be true before the test starts?
+The validation form is open, all other fields used are the values agreed as the baseline.
 
 #### Test Data
 
 | Field | Value |
 |---|---|
-| Input name | Input value |
+| Age | `17` |
+| Other fields | Agreed valid baseline |
 
 #### Steps
 
-1.
-2.
-3.
+1. Restore the validation form.
+2. Enter the agreed baseline.
+3. Replace age with `17`.
+4. Submit.
+5. Observe the response.
 
 #### Expected Result
 
-Write this before executing the test.
+Age 17 is rejected because it is below the minimum age requirements of 18.
 
 #### Actual Result
 
-Not recorded — test has not been executed.
+Age 17 is rejected, unable to submit the form, a message shown, rejecting the age.
 
 #### Evidence
 
-Not captured.
+[View screenshot](../evidence/member-a/AGE-2P-17-A.png)
 
 ---
 
