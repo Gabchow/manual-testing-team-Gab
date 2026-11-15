@@ -69,3 +69,30 @@ Results:
 - Chosen investigation:
 - Main observation:
 - Pull request: Add the actual pull-request link.
+
+### Member C
+
+- Guided results: [View results](results/member-c.md)
+- Self-designed tests: [View tests](exploratory/member-c.md)
+- Reflection: [View reflection](reflections/member-c.md)
+- Chosen investigation:
+- Main observation:
+- Pull request: Add the actual pull-request link.
+
+### Member D
+
+- Guided results: [View results](results/member-d.md)
+- Self-designed tests: [View tests](exploratory/member-d.md)
+- Reflection: [View reflection](reflections/member-d.md)
+- Chosen investigation:
+- Main observation:
+- Pull request: Add the actual pull-request link.
+
+### Member E
+
+- Guided results: [View results](results/member-e.md)
+- Self-designed tests: [View tests](exploratory/member-e.md)
+- Reflection: [View reflection](reflections/member-e.md)
+- Chosen investigation:
+- Main observation:
+- Pull request: Add the actual pull-request link.
