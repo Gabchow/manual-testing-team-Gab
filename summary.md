@@ -80,16 +80,18 @@ Results:
 - Guided results: [View results](results/member-b.md)
 - Self-designed tests: [View tests](exploratory/member-b.md)
 - Reflection: [View reflection](reflections/member-b.md)
-- Chosen investigation:
-- Main observation:
+- Chosen investigation: Investigate if a decimal number being input as the age will be accepted, and if not, what is the error message displayed.
+- Main observation: Form submission is unsuccessful.
+Error message displayed: "Please enter a valid value. The two nearest valid values are 18 and 19."
 
 ### Member C
 
 - Guided results: [View results](results/member-c.md)
 - Self-designed tests: [View tests](exploratory/member-c.md)
 - Reflection: [View reflection](reflections/member-c.md)
-- Chosen investigation:
-- Main observation:
+- Chosen investigation: Surname input testing.
+- Main observation:Unable to submit because the number of letters in surname not within the requirement range.
+
 
 ### Member D
 
@@ -104,5 +106,6 @@ Results:
 - Guided results: [View results](results/member-e.md)
 - Self-designed tests: [View tests](exploratory/member-e.md)
 - Reflection: [View reflection](reflections/member-e.md)
-- Chosen investigation:
-- Main observation:
+- Chosen investigation:To verify that the validation form prevents submission
+when the First name field is left empty.
+- Main observation: The browser correctly prevented submission when the required First name field was empty.
