@@ -9,8 +9,8 @@
 - Coordination responsibility: Team Coordination
 
 ### Member B
-- GitHub username:
-- Coordination responsibility:
+- GitHub username: Jeromey31
+- Coordination responsibility: Requirements and baseline
 
 ### Member C
 - GitHub username:ChongBoon  
@@ -31,6 +31,8 @@
 
 ## Open-Ended Testing Allocation
 
+## Repository Integration Arrangements
+
 ### Member A — Open-Ended Testing
 
 - Chosen area: Firstname length testing
@@ -38,8 +40,8 @@
 
 ### Member B — Open-Ended Testing
 
-- Chosen area:
-- Question to investigate:
+- Chosen area: Input form age
+- Question to investigate: What will happen when a decimal value is input for the age?
 
 ### Member C — Open-Ended Testing
 
