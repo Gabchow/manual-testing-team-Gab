@@ -51,4 +51,112 @@ The validation form is open and the agreed baseline is entered in every other fi
 
 #### Expected Result
 
-The requirement does not define decimal behaviour. The question being investigated is whether 18.5 is accepted, rejected, or rounded. I will record what happens without labelling it a
+The requirement does not define decimal behaviour. The question being investigated is whether 18.5 is accepted, rejected, or rounded. I will record what happens without labelling it a defect.
+
+#### Actual Result
+
+Not recorded — test has not been executed.
+
+#### Evidence
+
+Not captured.
+
+---
+
+### Test ID: OWN-D-02
+
+| Item      | Details     |
+| --------- | ----------- |
+| Test type | Exploratory |
+| Tester    | member-d    |
+| Status    | Not run     |
+
+#### Purpose
+
+Observe how the form handles a decimal age inside the valid range.
+
+#### Preconditions
+
+The validation form is open and the agreed baseline is entered in every other field.
+
+#### Test Data
+
+| Field        | Value                 |
+| ------------ | --------------------- |
+| Age          | `30.5`                |
+| Other fields | Agreed valid baseline |
+
+#### Steps
+
+1. Restore the validation form.
+2. Enter the agreed baseline.
+3. Replace age with `30.5`.
+4. Submit.
+5. Observe the response and any feedback.
+
+#### Expected Result
+
+The requirement does not define decimal behaviour. The question being investigated is whether a decimal in the middle of the range is accepted or rejected, and whether the response matches OWN-D-01.
+
+#### Actual Result
+
+Not recorded — test has not been executed.
+
+#### Evidence
+
+Not captured.
+
+---
+
+### Test ID: OWN-D-03
+
+| Item      | Details     |
+| --------- | ----------- |
+| Test type | Exploratory |
+| Tester    | member-d    |
+| Status    | Not run     |
+
+#### Purpose
+
+Observe how the form handles a decimal age just above the maximum boundary.
+
+#### Preconditions
+
+The validation form is open and the agreed baseline is entered in every other field.
+
+#### Test Data
+
+| Field        | Value                 |
+| ------------ | --------------------- |
+| Age          | `80.5`                |
+| Other fields | Agreed valid baseline |
+
+#### Steps
+
+1. Restore the validation form.
+2. Enter the agreed baseline.
+3. Replace age with `80.5`.
+4. Submit.
+5. Observe the response and any feedback.
+
+#### Expected Result
+
+The requirement does not define decimal behaviour. 80.5 is above the maximum of 80, so one possibility is rejection for being out of range, but the question being investigated is how the form actually treats it.
+
+#### Actual Result
+
+Not recorded — test has not been executed.
+
+#### Evidence
+
+Not captured.
+
+---
+
+## Overall Observations
+
+Not recorded yet.
+
+## Next Question
+
+Not recorded yet.
