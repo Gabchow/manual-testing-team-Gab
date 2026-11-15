@@ -60,46 +60,59 @@ Brought to the intended inventory page. Able to see the products. Passed the tes
 
 ## Equivalence Partitioning
 
-### Test ID: YOUR-TEST-ID
+### Test ID: AGE-EP-30-A
 
 | Item | Details |
 |---|---|
-| Test type | Positive / Negative / Recovery |
-| Tester | Your member identifier |
-| Website | Website name |
+| Test type | Positive |
+| Tester | member-a |
+| Website | https://testpages.eviltester.com/apps/client-server-form-validation/ |
 | Status | Not run |
 
 #### Purpose
 
 What does this test check?
 
+Age validation if the correct age used responds with the correct output, the form submitting
+successfully with the intended age.
+
 #### Preconditions
 
 What must be true before the test starts?
+The page loads, and the input can be entered.
 
 #### Test Data
 
 | Field | Value |
 |---|---|
-| Input name | Input value |
+First name | Alexander
+Surname	| TestingStudent
+Age	| 30
+Country	| Singapore
+Notes | Manual testing classroom exercise
 
 #### Steps
 
-1.
-2.
-3.
+1.Restore the form.
+2.Enter the valid baseline.
+3.Change only age.
+4.Write the expected result.
+5.Submit.
+6.Observe acceptance or rejection.
+7.Where displayed, verify the submitted age.
+8.Record the actual result and status in a separate test-case block.
 
 #### Expected Result
 
-Write this before executing the test.
+the form successfully submits with the intended age
 
 #### Actual Result
 
-Not recorded — test has not been executed.
+The form was successfully submitted with the age 30.
 
 #### Evidence
 
-Not captured.
+[View screenshot](../evidence/member-a/AGE-EP-30-A.png)
 
 ---
 
