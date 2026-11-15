@@ -18,7 +18,7 @@
 | Test type | Negative  |
 | Tester    | member-d  |
 | Website   | SauceDemo |
-| Status    | Pass   |
+| Status    | Pass      |
 
 #### Purpose
 
@@ -53,21 +53,25 @@ After leaving the username empty, entering `secret_sauce` as the password and se
 
 #### Evidence
 
-Not captured.
+Screenshot to be added.
 
 ---
 
 ## Equivalence Partitioning
 
+### Baseline Note
+
+The suggested first name `Alex` was rejected with the message "[paste exact message]". The published requirement says only that first name must be filled and fewer than 90 characters, so this is recorded as a requirement question rather than a confirmed defect. The team agreed to use `Alexander` as the first name in the baseline instead.
+
 ### Test ID: AGE-FMT-BLANK-D
 
-| Item | Details |
-|---|---|
-| Test type | Negative (input-format observation) |
-| Tester | member-d |
-| Website | Test Pages validation form |
+| Item      | Details                                 |
+| --------- | --------------------------------------- |
+| Test type | Negative (input-format observation)     |
+| Tester    | member-d                                |
+| Website   | Test Pages validation form              |
 | Technique | Equivalence partitioning (input format) |
-| Status | Observation only |
+| Status    | Observation only                        |
 
 #### Purpose
 
@@ -79,9 +83,9 @@ The validation form is open and the agreed baseline is entered in every other fi
 
 #### Test Data
 
-| Field | Value |
-|---|---|
-| Age | Empty |
+| Field        | Value                 |
+| ------------ | --------------------- |
+| Age          | Empty                 |
 | Other fields | Agreed valid baseline |
 
 #### Steps
@@ -102,19 +106,19 @@ With the baseline entered (first name `Alexander`) and the age field left empty,
 
 #### Evidence
 
-Not captured.
+Screenshot to be added.
 
 ---
 
 ### Test ID: AGE-FMT-ABC-D
 
-| Item | Details |
-|---|---|
-| Test type | Negative (input-format observation) |
-| Tester | member-d |
-| Website | Test Pages validation form |
+| Item      | Details                                 |
+| --------- | --------------------------------------- |
+| Test type | Negative (input-format observation)     |
+| Tester    | member-d                                |
+| Website   | Test Pages validation form              |
 | Technique | Equivalence partitioning (input format) |
-| Status | Observation Only |
+| Status    | Observation only                        |
 
 #### Purpose
 
@@ -126,9 +130,9 @@ The validation form is open and the agreed baseline is entered in every other fi
 
 #### Test Data
 
-| Field | Value |
-|---|---|
-| Age | `abc` |
+| Field        | Value                 |
+| ------------ | --------------------- |
+| Age          | `abc`                 |
 | Other fields | Agreed valid baseline |
 
 #### Steps
@@ -150,10 +154,104 @@ With the baseline entered, I clicked in the age field and tried to type `abc`. T
 
 #### Evidence
 
-Not captured.
+Screenshot to be added.
 
 ---
 
 ## 2-Point Boundary Tests
 
+### Test ID: AGE-2P-81-D
+
+| Item      | Details                    |
+| --------- | -------------------------- |
+| Test type | Negative                   |
+| Tester    | member-d                   |
+| Website   | Test Pages validation form |
+| Technique | 2-point boundary testing   |
+| Status    | Pass                       |
+
+#### Purpose
+
+Check that an age immediately above the maximum is rejected.
+
+#### Preconditions
+
+The validation form is open. All other fields use the agreed valid baseline.
+
+#### Test Data
+
+| Field        | Value                                                                                                 |
+| ------------ | ----------------------------------------------------------------------------------------------------- |
+| Age          | `81`                                                                                                  |
+| Other fields | Agreed valid baseline (`Alexander`, `TestingStudent`, Singapore, `Manual testing classroom exercise`) |
+
+#### Steps
+
+1. Restore the validation form.
+2. Enter the agreed baseline.
+3. Replace age with `81`.
+4. Submit.
+5. Observe the response.
+
+#### Expected Result
+
+Age 81 is rejected because it is above the maximum age of 80.
+
+#### Actual Result
+
+With the baseline entered (first name `Alexander`, last name `TestingStudent`, country Singapore, notes `Manual testing classroom exercise`) and age changed to `81`, I selected Submit. The form was not submitted. A browser pop-up appeared beside the age field saying "Value must be less than or equal to 80." This looks like the browser's built-in validation, so the rejection happened on the client side before anything reached the server. This matches the expected result.
+
+#### Evidence
+
+Screenshot to be added.
+
+---
+
 ## 3-Point Boundary Tests
+
+### Test ID: AGE-3P-82-D
+
+| Item      | Details                    |
+| --------- | -------------------------- |
+| Test type | Negative                   |
+| Tester    | member-d                   |
+| Website   | Test Pages validation form |
+| Technique | 3-point boundary testing   |
+| Status    | pass                       |
+
+#### Purpose
+
+Check that an age two above the maximum is rejected.
+
+#### Preconditions
+
+The validation form is open. All other fields use the agreed valid baseline.
+
+#### Test Data
+
+| Field        | Value                                                                                                 |
+| ------------ | ----------------------------------------------------------------------------------------------------- |
+| Age          | `82`                                                                                                  |
+| Other fields | Agreed valid baseline (`Alexander`, `TestingStudent`, Singapore, `Manual testing classroom exercise`) |
+
+#### Steps
+
+1. Restore the validation form.
+2. Enter the agreed baseline.
+3. Replace age with `82`.
+4. Submit.
+5. Observe the response.
+
+#### Expected Result
+
+Age 82 is rejected because it is above the maximum age of 80.
+
+#### Actual Result
+
+With the baseline entered (first name `Alexander`, last name `TestingStudent`, country Singapore, notes `Manual testing classroom exercise`) and age changed to `82`, I selected Submit. The form was not submitted. A browser pop-up appeared beside the age field saying "Value must be less than or equal to 80." This looks like the browser's built-in validation, so the rejection happened on the client side before anything reached the server. The behaviour was the same as for age 81. This matches the expected result.
+
+#### Evidence
+
+Not captured.
+
+---
